@@ -1,5 +1,3 @@
-$(function () {
-	function addClass() {
-		$("button").addClass("animated bounce");
-	}
+$(document).ready(function () {
+	$("button").addClass("animate__animated animate__bounce");
 });

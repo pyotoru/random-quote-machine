@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<wrapper>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Random quote app</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("button").addClass("animated bounce");
 
-            });
-        </script>
-    </head>
-    <body>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
-        <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quote app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fec472640d.js" crossorigin="anonymous"></script>
+    <script src="index.js">
 
-        </head>
+    </script>
+</head>
+<body>
 
-        <div id="wrapper">
-            <div id="quote-box">
-                <div id="text">
-                </div>
+
+    <div id="wrapper">
+        <div id="quote-box" class="container d-flex h-100">
+            <div id="text" class="row justify-content-center align-self-center">
+                <p>"This is going to be my quote"</p>
                 <div id="author">
+                    {-}"Franz Kafka"
                 </div>
-                <div id="quote-button">
-                    <button id="new-quote" class="btn btn-default target">New quote</button>
-                </div>
-                <a id="tweet-quote" href="twitter.com/intent/tweet"></a>
-
-
             </div>
 
+            <div id="quote-button">
+                <button id="new-quote" class="btn btn-default target">New quote</button>
+            </div>
+            <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank" class="btn contact-details"><i
+                    class="fab fa-twitter fa-4x" style="color:#eaee00;"></i>
 
         </div>
 
 
+    </div>
 
 
 
 
-    </body>
-    </html>
-</wrapper>
+
+
+</body>
+</html>
