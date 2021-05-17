@@ -29,16 +29,12 @@ body {
 	width: 150px;
 }
 
-#text {
+#quote-box-quote {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	font-size: 40px;
-}
-
-#author {
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #tweet-quote {

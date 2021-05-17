@@ -30,10 +30,13 @@ const quotes = [
 ];
 
 var randomQuote = [];
+var randomQuoteAuthor = [];
 
 function getRandomQuote() {
-	randomQuote.push(quotes[Math.floor(Math.random() * quotes.length)]);
+	randomQuote = quotes[Math.floor(Math.random() * quotes.length)].quote;
+	document.getElementById("text").innerHTML = randomQuote;
 
-	document.getElementById("result1").innerHTML = randomQuote;
+	randomQuoteAuthor =
+		quotes[Math.floor(Math.random() * quotes.length)].author;
+	document.getElementById("author").innerHTML = "- " + randomQuoteAuthor;
 }
-console.log(randomQuote());
