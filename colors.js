@@ -6,6 +6,7 @@ const colors = [
 	"#F7CAC9",
 	"#92A8D1",
 	"#fff0b3",
+	"#87ceeb",
 ];
 
 let randomColor = [];
