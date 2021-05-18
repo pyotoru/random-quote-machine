@@ -80,3 +80,4 @@ function getRandomQuote() {
 		quotes[Math.floor(Math.random() * quotes.length)].author;
 	document.getElementById("author").innerHTML = "- " + randomQuoteAuthor;
 }
+document.getElementById("text").innerHTML = randomQuote;
