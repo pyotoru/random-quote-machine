@@ -92,7 +92,8 @@ body {
 
   #quote-box-quote {
     top: 15%;
-    left: initial;
+    left: 10%;
+    right: 10%;
     transform: initial;
     font-size: initial;
   }
@@ -102,13 +103,13 @@ body {
     bottom: initial;
     padding: 20px;
     margin-left: 0px;
-    left: 10px;
+    left: 10%;
   }
 
   #quote-button {
     top: 50%;
     bottom: initial;
-    right: 10px;
+    right: 10%;
     padding-bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
