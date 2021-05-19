@@ -61,4 +61,54 @@ body {
   bottom: 0;
   right: 30px;
   padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: #87ceeb;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #quote-box {
+    top: initial;
+    left: initial;
+    /*-moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);*/
+    transform: initial;
+    height: 100%;
+    width: 100%;
+    top: initial;
+    left: initial;
+    /*-moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);*/
+    transform: initial;
+  }
+
+  #new-quote {
+    height: 50px;
+    width: 150px;
+  }
+
+  #quote-box-quote {
+    top: 15%;
+    left: initial;
+    transform: initial;
+    font-size: initial;
+  }
+
+  #tweet-quote {
+    top: 50%;
+    bottom: initial;
+    padding: 20px;
+    margin-left: 0px;
+    left: 10px;
+  }
+
+  #quote-button {
+    top: 50%;
+    bottom: initial;
+    right: 10px;
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
