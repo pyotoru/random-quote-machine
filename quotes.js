@@ -80,4 +80,14 @@ function getRandomQuote() {
 		quotes[Math.floor(Math.random() * quotes.length)].author;
 	document.getElementById("author").innerHTML = "- " + randomQuoteAuthor;
 }
-document.getElementById("text").innerHTML = randomQuote;
+
+$("button").addClass("animate__animated animate__bounce");
+$("#tweet-quote").addClass("animate__animated animate__bounce");
+$("#quote-box-quote").fadeIn("slow");
+$("#new-quote").click(function () {
+	$("#quote-box-quote").fadeOut("slow");
+});
+
+$("#new-quote").click(function () {
+	$("#quote-box-quote").fadeIn("slow");
+});
