@@ -1,3 +1,1 @@
-$("#new-quote").click(function () {
-	$("#quote-box-quote").addClass("transform");
-});
+$("#quote-box-quote").fadeIn("slow");
