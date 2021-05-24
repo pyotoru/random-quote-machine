@@ -34,17 +34,17 @@
 
 
             <div id="quote-button">
-                <button id="new-quote" class="btn btn-default target" onclick=" getRandomColor(); getRandomQuote()">New
+                <button id="new-quote" title="get a new quote" class="btn btn-default target"
+                    onclick=" getRandomColor(); getRandomQuote()">New
                     quote</button>
                 <script src="./quotes.js"></script>
                 <script src="./colors.js"></script>
-                <script src="./animation.js"></script>
+                <script src="./jquery.js"></script>
 
             </div>
 
-            <a class="button" id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=programming_quotes" +
-                encodeURIComponent('"' + randomQuote + '" ' + randomQuoteAuthor) target="_blank"><i
-                    class="fab fa-twitter fa-4x" style="color:whitesmoke"></i></a>
+            <a class="button" title="tweet this quote" id="tweet-quote" target="_blank"><i class="fab fa-twitter fa-4x"
+                    style="color:whitesmoke"></i></a>
         </div>
 
 
