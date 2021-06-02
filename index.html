@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="style.css">
     <script
         type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <script src="./index.js"></script>
-
-
 </head>
 
 <body onLoad="getRandomColor(); getRandomQuote(); ">
@@ -34,7 +31,7 @@
 
             <div id="quote-button">
                 <button id="new-quote" title="get a new quote" class="btn btn-default target"
-                    onclick=" getRandomColor(); getRandomQuote()">New
+                    onClick=" getRandomColor(), getRandomQuote()">New
                     quote</button>
                 <script src="./quotes.js"></script>
                 <script src="./colors.js"></script>

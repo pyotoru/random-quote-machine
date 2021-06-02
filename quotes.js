@@ -68,14 +68,16 @@ const quotes = [
 		author: "Cory House",
 	},
 ];
-
-var randomQuote = [];
-var randomQuoteAuthor = [];
-
+let quote = [];
 function getRandomQuote() {
-	let quote = quotes[Math.floor(Math.random() * quotes.length)];
+	quote = quotes[Math.floor(Math.random() * quotes.length)];
 
 	document.getElementById("text").innerHTML = quote.quote;
 
 	document.getElementById("author").innerHTML = "- " + quote.author;
+}
+
+function deleteRandomQuote() {
+	document.getElementById("text").innerHTML = [];
+	document.getElementById("author").innerHTML = [];
 }

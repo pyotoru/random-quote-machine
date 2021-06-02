@@ -4,24 +4,21 @@ $(document).ready(function () {
 
 	// to be improved later on
 
-	/*$("#new-quote").click(function fadeOut() {
-		$("#quote-box-quote").fadeOut("slow");
+	$("#new-quote").click(function () {
+		$("#quote-box-quote")
+			.fadeOut("slow")
+			.fadeIn("slow", getRandomColor(), getRandomQuote());
 	});
-	$("#new-quote").click(function fadeIn() {
-		$("#quote-box-quote").fadeIn("slow", getRandomQuote());
-	});
-	*/
 
 	$("#tweet-quote").attr(
 		"href",
 		"https://twitter.com/intent/tweet?hashtags=ProgrammingQuotes&related=quotes&text=" +
 			encodeURIComponent(
 				'"' +
-					randomQuote +
+					document.getElementById("text").innerHTML +
 					'" ' +
 					"\n" +
-					"- " +
-					randomQuoteAuthor +
+					document.getElementById("author").innerHTML +
 					"\n"
 			)
 	);
