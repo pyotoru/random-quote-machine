@@ -73,10 +73,9 @@ var randomQuote = [];
 var randomQuoteAuthor = [];
 
 function getRandomQuote() {
-	randomQuote = quotes[Math.floor(Math.random() * quotes.length)].quote;
-	document.getElementById("text").innerHTML = randomQuote;
+	let quote = quotes[Math.floor(Math.random() * quotes.length)];
 
-	randomQuoteAuthor =
-		quotes[Math.floor(Math.random() * quotes.length)].author;
-	document.getElementById("author").innerHTML = "- " + randomQuoteAuthor;
+	document.getElementById("text").innerHTML = quote.quote;
+
+	document.getElementById("author").innerHTML = "- " + quote.author;
 }

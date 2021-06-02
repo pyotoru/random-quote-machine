@@ -8,9 +8,9 @@ $(document).ready(function () {
 		$("#quote-box-quote").fadeOut("slow");
 	});
 	$("#new-quote").click(function fadeIn() {
-		$("#quote-box-quote").fadeIn("slow");
+		$("#quote-box-quote").fadeIn("slow", getRandomQuote());
 	});
-    */
+	*/
 
 	$("#tweet-quote").attr(
 		"href",
