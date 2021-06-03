@@ -68,16 +68,31 @@ const quotes = [
 		author: "Cory House",
 	},
 ];
-let quote = [];
+var currentQuote = "";
+let currentAuthor = "";
 function getRandomQuote() {
-	quote = quotes[Math.floor(Math.random() * quotes.length)];
+	return quotes[Math.floor(Math.random() * quotes.length)];
+}
+function getQuote() {
+	let randomQuote = getRandomQuote();
 
-	document.getElementById("text").innerHTML = quote.quote;
+	currentQuote = randomQuote.quote;
+	currentAuthor = randomQuote.author;
 
-	document.getElementById("author").innerHTML = "- " + quote.author;
+	document.getElementById("text").innerHTML = randomQuote.quote;
+
+	document.getElementById("author").innerHTML = "- " + randomQuote.author;
+	$("#tweet-quote").attr(
+		"href",
+		"https://twitter.com/intent/tweet?hashtags=ProgrammingQuotes&related=quotes&text=" +
+			encodeURIComponent(
+				'"' + currentQuote + '" ' + "\n" + currentAuthor + "\n"
+			)
+	);
 }
 
 function deleteRandomQuote() {
 	document.getElementById("text").innerHTML = [];
 	document.getElementById("author").innerHTML = [];
 }
+console.log(getRandomQuote);
