@@ -15,7 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/pyotoru/random-quote-machine/issues"
 	},
-	"homepage": "https://github.com/pyotoru/random-quote-machine#readme",
+	"homepage": "https://pyotoru.github.io/random-quote-machine/",
 	"dependencies": {
 		"animate.css": "^4.1.1",
 		"bootstrap": "^5.0.1",
