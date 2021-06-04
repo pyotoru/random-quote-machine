@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 	// to be improved later on
 
-	"#new-quote".click(function () {
+	$("#new-quote").click(function () {
 		$("#quote-box-quote")
 			.fadeOut("slow")
 			.fadeIn("slow", getRandomColor(), getQuote());
