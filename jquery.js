@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 	$("#new-quote").click(function () {
 		$("#quote-box-quote")
-			.fadeOut("slow")
-			.fadeIn("slow", getRandomColor(), getQuote());
+			.fadeOut("slow", () => getQuote())
+			.fadeIn("slow", getRandomColor());
 	});
 });
